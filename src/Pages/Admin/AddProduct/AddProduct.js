@@ -14,7 +14,7 @@ const AddProduct = () => {
     setAddProduct(newProduct);
   };
   const handleAddProduct = (e) => {
-    fetch("http://localhost:5000/products", {
+    fetch("https://evening-cliffs-01077.herokuapp.com/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

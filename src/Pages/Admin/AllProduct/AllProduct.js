@@ -5,7 +5,7 @@ const AllProduct = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/products")
+    fetch("https://evening-cliffs-01077.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .finally(() => {
@@ -15,7 +15,7 @@ const AllProduct = () => {
   const handleDeleteProduct = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/products/${id}`;
+      const url = `https://evening-cliffs-01077.herokuapp.com/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })

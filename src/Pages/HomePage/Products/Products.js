@@ -11,7 +11,9 @@ const Products = () => {
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/products");
+      const response = await fetch(
+        "https://evening-cliffs-01077.herokuapp.com/products"
+      );
       if (componentMounted) {
         setData(await response.clone().json());
         setFilter(await response.json());

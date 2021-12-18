@@ -19,7 +19,7 @@ const ProductDetail = () => {
     const getProduct = async () => {
       setloading(true);
       const response = await fetch(
-        `http://localhost:5000/products/${productId}`
+        `https://evening-cliffs-01077.herokuapp.com/products/${productId}`
       );
       setProduct(await response.json());
       setloading(false);

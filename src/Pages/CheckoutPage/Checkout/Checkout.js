@@ -102,7 +102,7 @@ const Checkout = () => {
                     type="email"
                     className="form-control"
                     id="email"
-                    placeholder="you@example.com"
+                    placeholder="email"
                   />
                   <div className="invalid-feedback">
                     Please enter a valid email address for shipping updates.
