@@ -4,7 +4,6 @@ import Home from "./Pages/HomePage/Home/Home";
 import ProductsPage from "./Pages/ProductsPage/ProductsPage/ProductsPage";
 import ProductPage from "./Pages/ProductsPage/ProductPage/ProductPage";
 import { Provider } from "react-redux";
-
 import CartPage from "./Pages/CartPage/CartPage/CartPage";
 import CheckoutPage from "./Pages/CheckoutPage/CheckoutPage/CheckoutPage";
 import { PersistGate } from "redux-persist/integration/react";

@@ -6,8 +6,6 @@ Server site: (https://evening-cliffs-01077.herokuapp.com/).
 
 ## Available Features
 
-- Login User
-- Register User
-- Admin Dashboard
-- Admin can add product
-- Admin can delete product
+- Using firebase password authentication system.
+- Using Redux for state management.
+- Here has an admin panel. Admin can delete and add a light.

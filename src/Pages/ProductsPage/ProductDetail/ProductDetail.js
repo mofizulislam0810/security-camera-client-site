@@ -2,17 +2,23 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Spinner from "../../Shared/Spinner/Spinner";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addCart } from "../../../redux/action";
 
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState([]);
   const [loading, setloading] = useState(false);
+  const state = useSelector((state) => state.handleCart);
 
   const dispatch = useDispatch();
   const addProduct = (product) => {
-    dispatch(addCart(product));
+    const exist = state.find((x) => x._id === product._id);
+    if (!exist) {
+      dispatch(addCart(product));
+    } else {
+      alert("Item already added in cart!");
+    }
   };
 
   useEffect(() => {

@@ -6,6 +6,21 @@ export const addCart = (product) => {
   };
 };
 
+// For increment item from cart
+export const increment = (product) => {
+  return {
+    type: "INCREMENT",
+    payload: product,
+  };
+};
+// For decrement item from cart
+export const decrement = (product) => {
+  return {
+    type: "DECREMENT",
+    payload: product,
+  };
+};
+
 // For delete item from cart
 export const delCart = (product) => {
   return {
